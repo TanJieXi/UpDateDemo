@@ -88,6 +88,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void authSan(SHARE_MEDIA a){
+        UMShareAPI.get(this).deleteOauth(this, a, new UMAuthListener() {
+            @Override
+            public void onStart(SHARE_MEDIA share_media) {
+
+            }
+
+            @Override
+            public void onComplete(SHARE_MEDIA share_media, int i, Map<String, String> map) {
+
+            }
+
+            @Override
+            public void onError(SHARE_MEDIA share_media, int i, Throwable throwable) {
+
+            }
+
+            @Override
+            public void onCancel(SHARE_MEDIA share_media, int i) {
+
+            }
+        });
       UMShareAPI.get(this).getPlatformInfo(this,a , new UMAuthListener() {
             @Override
             public void onStart(SHARE_MEDIA share_media) {

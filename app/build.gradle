@@ -17,7 +17,7 @@ android {
         }
     }
 
-    signingConfigs {
+   /* signingConfigs {
         debug {
             keyAlias 'l'
             keyPassword '123456'
@@ -30,7 +30,7 @@ android {
             storeFile file('../app/update.jks')
             storePassword '123456'
         }
-    }
+    }*/
 }
 
 dependencies {

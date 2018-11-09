@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
     <Button
+        android:visibility="gone"
         android:id="@+id/btn_share"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,6 +17,7 @@
         android:text="分享"
        />
     <Button
+        android:visibility="gone"
         android:id="@+id/btn_QQ"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,10 +25,19 @@
         android:text="QQ登录"
         />
     <Button
+        android:visibility="gone"
         android:id="@+id/btn_weixin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="btnShare"
         android:text="微信登录"
+        />
+
+    <Button
+        android:id="@+id/btn_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnDownLoad"
+        android:text="更新"
         />
 </LinearLayout>

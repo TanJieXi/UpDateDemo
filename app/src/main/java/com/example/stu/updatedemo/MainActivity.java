@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.stu.updatedemo.update.UpDateAppUtils;
 import com.umeng.socialize.ShareAction;
 import com.umeng.socialize.UMAuthListener;
 import com.umeng.socialize.UMShareAPI;
@@ -130,5 +131,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.i("dsfdsfgds","onCancel");
             }
         });
+    }
+
+    public void btnDownLoad(View view) {
+        UpDateAppUtils.getInstance().upDataApp(this,"https://qh.api.znjtys.com:7001/d/index.html");
     }
 }

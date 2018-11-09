@@ -1,6 +1,7 @@
 package com.example.stu.updatedemo;
 
 import android.app.Application;
+import android.content.Context;
 import android.support.multidex.MultiDex;
 
 import com.umeng.commonsdk.UMConfigure;
@@ -10,7 +11,7 @@ import com.umeng.socialize.PlatformConfig;
  * Created by TanJieXi on 2018/9/13.
  */
 public class App extends Application {
-
+    private static Context mContext;
     @Override
     public void onCreate() {
         super.onCreate();
@@ -23,5 +24,11 @@ public class App extends Application {
 
         MultiDex.install(this);
 
+        mContext = this;
+
+    }
+
+    public static Context getmContext(){
+        return mContext;
     }
 }
